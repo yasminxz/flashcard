@@ -11,6 +11,9 @@ body{
 
 main{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cabecalho{
@@ -48,10 +51,23 @@ footer{
 
 .cartao-interno{
     position: relative;
+    transition: 0.8s;
+    transform-style: preserve-3d;
 }
 
  .carta-verso,.cartao-frente{
         position: absolute;
         border-radius: 12px;
         box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        backface-visibility: hidden;
+    }
+    .carta-verso{
+        transform: rotateY('180deg');
+    }
+    .cartao:hover .cartao-interno{
+        transform: rotateY('180deg');
+    }
+    section{
+        display: flex;
+        gap: 16px;
     }
