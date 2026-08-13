@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     }
+
 main{
     flex: 1;
 }
+
 .cabecalho{
 
     padding: 15px 25px;
@@ -31,12 +34,24 @@ main{
     color: #fff;
     text-decoration: none ;
 }
+
 h1{
     color: #fff;
     font-size: 24px;
 }
+
 footer{
     background-color: #7E3E1C;
     padding: 15px 25px;
     color: #fff;
 }
+
+.cartao-interno{
+    position: relative;
+}
+
+ .carta-verso,.cartao-frente{
+        position: absolute;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
