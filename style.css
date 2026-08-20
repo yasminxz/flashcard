@@ -62,10 +62,10 @@ footer{
         backface-visibility: hidden;
     }
     .carta-verso{
-        transform: rotateY('180deg');
+        transform: rotateY(180deg);
     }
     .cartao:hover .cartao-interno{
-        transform: rotateY('180deg');
+        transform: rotateY(180deg);
     }
     section{
         display: flex;
